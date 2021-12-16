@@ -49,30 +49,204 @@ header {
 
 /** ******* Banner Section Starting Here ***** **/
 
-/* #container #banner {
-    
-} */
+#container #banner {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#container #banner:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 #container #banner #inner-content {
     display:flex;
     flex-direction: row;
 }
 
-#container #banner #bottom-list {
+/** ******* Banner Left Mobile Section Starting Here ***** **/
+#container #banner #inner-content #mobile {
+    margin: 6rem 4rem 6rem 6rem;
+}
+
+#container #banner #inner-content #mobile-sub-heading {
+    position: relative;
+    left: 25%;
+    top: 5%;
+    border: 1px solid black;
+    width: 130px;
+    /* padding: 0.5rem; */
     display: flex;
-    flex-direction: row;
-    margin-block-start: 0;
-    margin-block-end: 0;
+}
+
+#container #banner #inner-content #mobile-sub-heading .checkbox {
+    border-right: 1px solid black;
+    padding: 10px;
+}
+
+/** ******* Banner Right Mobile Section Starting Here ***** **/
+#container #banner #inner-content #details .details-header {
+    /* display: flex; */
+    margin: 5rem 0 0 0;
+}
+/* 
+#container #banner #inner-content #details .details-header h1 {
+    
+} */
+
+#container #banner #inner-content #details .details-header .sub-block {
+    margin: 0 1.5rem;
+}
+#container #banner #inner-content #details .details-header .sub-block #heading-block {
+     display: flex;
+ }
+
+#container #banner #inner-content #details .details-header .sub-block #chd-block .btn-anrd {
+    background-color: #5454540d;
+    border: transparent;
+    position: relative;
+    bottom: 1.3rem;
+    left: 2rem;
+}
+/** ******* Three color Boxes ***** **/
+#container #banner #inner-content #details .details-header .sub-block .box-section {
+    display: flex;
+}
+#container #banner #inner-content #details .details-header .sub-block .box-section .box {
+    height: 30px;
+    width: 30px;
+    margin: 1rem 1rem 0 0;
+}
+#container #banner #inner-content #details .details-header .sub-block .box-section .box-1 {
+    
+    background: #795548;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .box-section .box-2 {
+    
+    background: #b0bec5;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .box-section .box-3 {
+   
+    background: #3a2724;
+}
+
+/** ******* Price with Shop Now Button ***** **/
+#container #banner #inner-content #details .details-header .sub-block .buy-block {
+    margin: 2rem 0 0 0;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .buy-block .text {
+    color:#0c7df1;
+    font-size: 35px;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .buy-block .buy-now {
+    padding:1rem;
+    background: #0c7df1;
+    color: #fff;
+    margin: 0 0 0 1rem;
+    border-radius: 30px;
+    border: transparent;
+    width: 150px;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+/** ******* Features Section Starting here ***** **/
+#container #banner #inner-content #details .details-header .sub-block .features{
+    margin: 3rem 0 0 0;
+ }
+#container #banner #inner-content #details .details-header .sub-block .features ul {
+    display: flex;
     padding-inline-start: 0;
 }
 
-#container #banner #bottom-list li {
+#container #banner #inner-content #details .details-header .sub-block .features ul li {
+    list-style-type: none;
+    margin: 0 4rem 0 0;
+    width: 95px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .features ul li .feature-name {
+    font-size: 21px;
+    color: #545454c9;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .features ul li img {
+    width: 40px;
+    margin: 2rem 0;
+}
+
+#container #banner #inner-content #details .details-header .sub-block .features ul li .recom {
+    margin: 1rem 0;
+    color: #545454c9;
+}
+
+/** ******* Sub Features Section Starting here ***** **/
+#container #banner #inner-content #details .details-header .sub-block #sub-features-list ul {
+    display: flex;
+    padding-inline-start: 0;
+}
+
+#container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+
+#container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li img {
+    width:80px;
+    height:30px;
+}
+
+#container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li span {
+    margin: 1rem 0 0 0;
+    color: #545454c9;
+}
+
+
+/** ******* Bootom list Section Starting here ***** **/
+
+#container #banner ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-direction: row;
+    
+    background: #cbcaca1a;
+}
+/* #container #banner #bottom-list {
+   
+} */
+
+#container #banner ul .active {
+    background-color:#0c7df1;
+}
+
+#container #banner ul li {
     list-style-type: none;
     
     flex-grow: 1;
-    position: relative;
-    left: 4rem;
+    /* position: relative; */
+    /* left: 4rem; */
+    display: flex;
+    flex-direction: column;
     
+}
+
+#container #banner ul li img {
+    width: 40px;
+}
+
+
+
+/***** Helper css *****/
+
+.mr {
+    margin-right: 0.5rem;
 }
 
 
