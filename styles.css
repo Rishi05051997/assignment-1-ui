@@ -179,7 +179,7 @@ header {
 
 /** ******* Features Section Starting here ***** **/
 #container #banner #inner-content #details .details-header .sub-block .features{
-    margin: 3rem 0 0 0;
+    margin-top: -1.5rem;
  }
 #container #banner #inner-content #details .details-header .sub-block .features ul {
     display: flex;
@@ -277,11 +277,15 @@ header {
 }
 
 #container #banner .bottomList .list-item .btm-img {
-    width: 40px;
+    /* width: 40px; */
+    object-fit: contain;
 }
 
 #container #banner .bottomList .list-item .btm-span {
     font-family: 'Poppins', sans-serif;
+    /* margin: 0rem; */
+    position: relative;
+    top: 0.5rem;
 }
 
 
@@ -421,13 +425,17 @@ header {
     right: 14rem;
 }
 
-#container .reviews .spec-item-title .rev-content #sort span {
+#container .reviews .spec-item-title .rev-content #sort #sortSpan {
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 1rem 0 0;
 }
 
-#container .reviews .spec-item-title .rev-content #sort select {
+#container .reviews .spec-item-title .rev-content #sort #sortSelect {
     padding: 0.5rem;
     border: 1px solid #bdbdbd;
+    color: #545454c9;
+    font-family: 'Poppins', sans-serif;
 }
 
 #container .reviews .spec-item-title .rev-content .rev-heading {
@@ -444,6 +452,7 @@ header {
     padding: 0.5rem;
     border: 1px solid #bdbdbd;
     background-color: #fff;
+    color: #545454c9;
     font-family: 'Poppins', sans-serif;
 } 
 
@@ -460,6 +469,7 @@ header {
 }
 #container .reviews #positive-review .pos-feed {
     font-family: 'Poppins', sans-serif;
+    margin: 0 0 0 0.7rem;
 }
 
 #container .reviews #positive-review .pos-feed .date {
@@ -467,10 +477,20 @@ header {
     color: #545454c9;
     
 }
+#container .reviews #positive-review .pos-feed .date .ratingSpan {
+    margin-right: 0.5rem;
+    font-size: 0.83em;
+}
+
+#container .reviews #positive-review .pos-feed .date .ratingDate {
+    margin-left: 0.5rem;
+    font-size: 0.83em;
+}
 
 #container .reviews #positive-review .pos-feed .feed-name {
     margin: 1rem 0;
     color: #545454c9;
+    font-size: 0.83em;
     
 }
 #container .reviews #positive-review .pos-feed h5 {
@@ -700,6 +720,10 @@ header {
 
  .lg-color {
     color: #545454c9;
+ }
+
+ @media (max-width:1068px){
+
  }
 
 
