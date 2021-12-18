@@ -741,7 +741,7 @@ header {
     
     header #mainHeader {
         margin: 0;
-        font-size: 20px;
+        font-size: 15px;
     }
     header #nav {
         display: flex;
@@ -749,7 +749,7 @@ header {
 
     }
     header #nav .nav-links {
-        font-size: 15px;
+        font-size: 8px;
         padding: 0 5px 0 0;
     }
 
@@ -758,10 +758,10 @@ header {
         margin:0;
     }
     #container #banner {
-        width: 548px;
+        width: 345px;
     }
     #container #main-sub-para #para {
-        font-size: 16px;
+        font-size: 14px;
     }
     #container #banner #inner-content {
         display: flex;
@@ -778,13 +778,13 @@ header {
         margin: 0 10px;
     }
     #container #banner #inner-content #details .details-header .sub-block #heading-block h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     #container #banner #inner-content #details .details-header .sub-block #exe {
         position: relative;
-        left: 4rem;
-        top: 2rem;
-        width: 130px;
+        left: 1rem;
+        top: 1rem;
+        width: 120px;
     }
     #container #banner #inner-content #details .details-header .sub-block #chd-block #ratingSpan {
         font-size: 20px;
@@ -843,32 +843,53 @@ header {
     }
 
     #container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li .feature-span {
-        font-size: 11px;
+        font-size: 8px;
     }
     #container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li img {
         width: 70px;
         height: 30px;
     }
     #container #banner #inner-content #details .details-header .sub-block #hrrr {
-        width: 535px;
+        width: 326px;
         position: relative;
         right: 5px;
     }
+    #container #banner .bottomList .list-item {
+        padding: 0.5rem;
+    }
     #container #banner .bottomList .list-item .btm-img {
-        width: 20px;
+        width: 15px;
     }
     #container #banner .bottomList .list-item .btm-span {
-        font-size: 10px;
+        font-size: 7px;
     }
 
     /*************** Specification Starting Here **************** ******/
+    .content {
+        padding: 0.5rem 1.5rem;
+    }
+    .content-heading {
+        font-size: 15px;
+    }
+    #container .spec-section .spec .spec-item .table {
+        padding: 0.5rem;
+    }
+    .row, .cell {
+        padding: 5px 25px 5px 0;
+    }
+    
     #container .spec-section {
         display: flex;
         flex-direction: column;
     }
-
+    .left-head {
+        font-size: 11px;
+    }
+    .right-head {
+        font-size:11px;
+    }
     #container .spec-section .spec {
-        width: fit-content;
+        width: max-content;
     }
     /* .content-heading {
         font-size: 14px;
@@ -878,20 +899,21 @@ header {
         bottom: 8px;
     } */
     #container .spec-section .side-section {
-        width: max-content;
+        width: auto;
+        margin: 1rem;
     }
     #container .spec-section .side-section .advertise img {
-        width: 512px;
+        width: 275px;
     }
     #container .spec-section .side-section .related-products .products-container hr {
-        width: 511px;
+        width: 275px;
     }
     #container .reviews {
-        width: 548px;
+        width: 338px;
     }
     #container .reviews .spec-item-title .rev-content #sort {
         position: absolute;
-        right: -11rem;
+        right: 1rem;
     }
     #container .reviews .rev-btn-section .btn {
         margin:0.2rem;
@@ -904,15 +926,49 @@ header {
         top: 10px;
         left: 15px;
         height: 15px;
-        width: 301px;
+        width: 175px;
     }
     .compareScale{
-        width: 315px;
+        width: 175px;
+        position: relative;
+        left: 0.7rem;
     }
     .rev-sub-container .cam .table .row .right-head .revi-header {
         position: relative;
         left: 15%;
     }
+    #footer .sub-container {
+        display: flexbox;
+        flex-direction: column;
+    }
+    #footer .sub-container .item .footer-header {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 17px;
+    }
+    .sub-container .item .footer-para {
+        line-height: 1.4rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 8px;
+        text-align: center;
+    }
+    .logos {
+        margin: 0 43px;
+    }
+    #footer .sub-container .instagram-feeds .grids-gallery-container {
+        position: relative;
+        right: 8px;
+    }
+    #footer .sub-container .twitter-feeds {
+        margin: 0;
+    }
+    #twitterSpan{
+        position: relative;
+        left: 4.5rem;
+    }#footer .sub-container .instagram-feeds {
+        margin: 0 ;
+    }
+
 
     
 
