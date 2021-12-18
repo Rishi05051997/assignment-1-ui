@@ -889,7 +889,8 @@ header {
         font-size:11px;
     }
     #container .spec-section .spec {
-        width: max-content;
+        width: auto;
+        margin: 1rem auto;
     }
     /* .content-heading {
         font-size: 14px;
