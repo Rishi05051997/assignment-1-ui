@@ -758,7 +758,7 @@ header {
         margin:0;
     }
     #container #banner {
-        width: 345px;
+        width: auto;
     }
     #container #main-sub-para #para {
         font-size: 14px;
@@ -922,11 +922,11 @@ header {
         width: 310px;
     }
     #container .reviews {
-        width: 338px;
+        width: auto;
     }
     #container .reviews .spec-item-title .rev-content #sort {
         position: absolute;
-        right: 1rem;
+        right: 3rem;
     }
     #container .reviews .rev-btn-section .btn {
         margin:0.2rem;
