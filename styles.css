@@ -15,19 +15,19 @@ header {
     flex-direction: row;
 }
 
-header h1 {
+header #mainHeader {
     margin: 1.7rem 0 0 12rem;
     font-family: 'Poppins', sans-serif;
    
 }
 
-header nav {
+header #nav {
     position: absolute;
     right: 11rem;
     top: 3rem;
 }
 
-header nav a {
+header #nav .nav-links {
     color: black;
     text-decoration: none;
     padding:0 1rem;
@@ -48,7 +48,7 @@ header {
     margin:0 12rem;
 }
 
-#container div p {
+#container #main-sub-para #para {
     color: lightslategray;
     font-size: 1.1rem;
 }
@@ -111,6 +111,9 @@ header {
  }
  #container #banner #inner-content #details .details-header .sub-block #heading-block h1{
     font-family: 'Poppins', sans-serif;
+ }
+ #container #banner #inner-content #details .details-header .sub-block #chd-block #strSpan {
+     margin-left: 5px;
  }
 
  #container #banner #inner-content #details .details-header .sub-block #chd-block #ratingSpan {
@@ -176,7 +179,11 @@ header {
     position: relative;
     bottom: 0.5rem;
 }
-
+#container #banner #inner-content #details .details-header .sub-block #hrrr {
+    width: 600px; 
+    position: relative; 
+    right: 18px
+}
 /** ******* Features Section Starting here ***** **/
 #container #banner #inner-content #details .details-header .sub-block .features{
     margin-top: -1.5rem;
@@ -723,8 +730,193 @@ header {
  }
 
  @media (max-width:1068px){
+    /*  *** Header starting here    */
+    header {
+        padding: 0 0 1rem 0;
+        width: fit-content;
+        box-shadow: 2.5px 5px 4px #88888833;
+    }
+    
+    
+    
+    header #mainHeader {
+        margin: 0;
+        font-size: 20px;
+    }
+    header #nav {
+        display: flex;
+        position: initial;
 
- }
+    }
+    header #nav .nav-links {
+        font-size: 15px;
+        padding: 0 5px 0 0;
+    }
+
+    /** ******* Main Section Starting Here ***** **/
+    #container {
+        margin:0;
+    }
+    #container #banner {
+        width: 548px;
+    }
+    #container #main-sub-para #para {
+        font-size: 16px;
+    }
+    #container #banner #inner-content {
+        display: flex;
+        flex-direction: column;
+    }
+    #container #banner #inner-content #mobile {
+        margin: 1rem auto;
+    }
+    #container #banner #inner-content #details .details-header {
+        /* display: flex; */
+        margin:0;
+    }
+    #container #banner #inner-content #details .details-header .sub-block {
+        margin: 0 10px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #heading-block h1 {
+        font-size: 30px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #exe {
+        position: relative;
+        left: 4rem;
+        top: 2rem;
+        width: 130px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #chd-block #ratingSpan {
+        font-size: 20px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #chd-block .btn-anrd {
+        background-color: #5454540d;
+        border: transparent;
+        position: relative;
+        bottom: 0.3rem;
+        left: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight:lighter;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .box-section .box {
+        height: 20px;
+        width: 20px;
+        margin: 0.5rem 0.5rem 0 0;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .buy-block {
+        margin: 1rem 0 0 0;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .buy-block .text {
+    font-size: 20px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .buy-block .buy-now {
+        padding: 0.5rem;
+        background: #4573f3e0;
+        color: #fff;
+        margin: 0 0 0 0.5rem;
+        border-radius: 15px;
+        border: transparent;
+        width: 100px;
+        font-weight: bold;
+        position: relative;
+        bottom: 0.25rem;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .features ul li {
+        list-style-type: none;
+        margin: 0 1rem 0 0;
+        width: 95px;
+        display: flex;
+        flex-direction: column;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .features ul li img {
+        width: 30px;
+        margin: 1rem 0;
+        position: relative;
+        left: -0.4rem;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .features ul li .feature-name {
+        font-size:14px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block .features ul li .recom {
+        margin: 0.5rem 0;
+        font-size: 11px;
+    }
+
+    #container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li .feature-span {
+        font-size: 11px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #sub-features-list ul li img {
+        width: 70px;
+        height: 30px;
+    }
+    #container #banner #inner-content #details .details-header .sub-block #hrrr {
+        width: 535px;
+        position: relative;
+        right: 5px;
+    }
+    #container #banner .bottomList .list-item .btm-img {
+        width: 20px;
+    }
+    #container #banner .bottomList .list-item .btm-span {
+        font-size: 10px;
+    }
+
+    /*************** Specification Starting Here **************** ******/
+    #container .spec-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container .spec-section .spec {
+        width: fit-content;
+    }
+    /* .content-heading {
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        left: 10px;
+        bottom: 8px;
+    } */
+    #container .spec-section .side-section {
+        width: max-content;
+    }
+    #container .spec-section .side-section .advertise img {
+        width: 512px;
+    }
+    #container .spec-section .side-section .related-products .products-container hr {
+        width: 511px;
+    }
+    #container .reviews {
+        width: 548px;
+    }
+    #container .reviews .spec-item-title .rev-content #sort {
+        position: absolute;
+        right: -11rem;
+    }
+    #container .reviews .rev-btn-section .btn {
+        margin:0.2rem;
+    }
+    .progress {
+        background-color: #d8d8d8;
+        /* border-radius: 20px; */
+        position: relative;
+        /* margin: 15px 0; */
+        top: 10px;
+        left: 15px;
+        height: 15px;
+        width: 301px;
+    }
+    .compareScale{
+        width: 315px;
+    }
+    .rev-sub-container .cam .table .row .right-head .revi-header {
+        position: relative;
+        left: 15%;
+    }
+
+    
+
+}
 
 
 
